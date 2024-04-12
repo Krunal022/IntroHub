@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family:Nimbus sans L ;
   font-weight: 500;
+  /* background-color: rgba(158, 190, 217, 0.568); */
 }
 body,
 html {
@@ -91,10 +92,10 @@ html {
   background-size: cover;
 }
 #img1{
-  background-image: url(dcca8818-053f-4876-afaf-ec4f0b7a31c8.jpeg);
+  background-image: url(evie-s-dcniOOqByj0-unsplash.jpg);
 }
 #img2{
-  background-image: url(dcca8818-053f-4876-afaf-ec4f0b7a31c8.jpeg);
+  background-image: url(https://reverseddigital.com/assets/7b2cb684-9775-01b4-a586-c1688bca4a29/c042734b-9824-4c88-b91f-690d5808bfab/vie%20-%20Case%20large.jpg?fm=webp&fit=max&w=1536);
 }
 .bottom{
   display: flex;
