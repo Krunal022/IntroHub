@@ -2,51 +2,62 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:Nimbus sans L ;
+  font-family: Nimbus sans L;
   font-weight: 500;
   /* background-color: rgba(158, 190, 217, 0.568); */
 }
+
 body,
 html {
   height: 100%;
   width: 100%;
 }
+
 #main {
   height: 100%;
   width: 100%;
 }
+
 #nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 45px 60px;
 }
+
 #nav-part1 {
   display: flex;
   justify-content: space-between;
   width: 45%;
 }
-#nav-part1 #Name{
+
+#nav-part1 #Name {
   font-family: Segoe Script;
 }
+
 #nav-part2 {
   display: flex;
   justify-content: space-between;
   width: 45%;
 }
-#nav-part2 a ,#nav-part1 h3{
+
+#nav-part2 a,
+#nav-part1 h3 {
   font-weight: 600;
   color: black;
   text-decoration: none;
 }
-#content{
+
+#content {
   padding: 70px 60px;
 }
-#content h3{
+
+#content h3 {
   font-weight: 900;
   font-size: 1.5vw;
 }
-#content h1{
+
+#content h1 {
   margin-top: 30px;
   font-weight: 500;
   font-size: 10vw;
@@ -54,72 +65,189 @@ html {
   letter-spacing: -.5vw;
   word-spacing: 7px;
 }
-#case{
+
+#case {
   justify-content: space-between;
   display: flex;
   padding: 40px 65px;
   margin-top: 130x;
 }
-#case h4 , #right h5 {
+
+#case h4,
+#right h5 {
   font-size: 26px;
   font-weight: 500;
 }
-#right{
+
+#right {
   display: flex;
   align-items: center;
   gap: 25px;
 }
-#line{
+
+#line {
   height: 2px;
   background-color: black;
   width: 130px;
 }
-#projects{
+
+#projects {
   padding: 40px 65px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 180px;
 }
-.elem{
+
+.elem {
   width: 100%;
 }
-.elem .elem-img{
+
+.elem .elem-img {
   width: 100%;
   height: 600px;
   border-radius: 30px;
   object-fit: cover;
   background-size: cover;
 }
-#img1{
+
+#img1 {
+  background-image: url(IMG-20220618-WA0010.jpg);
+  background-size: contain;
+  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.534);
+  background-position: center;
+}
+
+#img2 {
+  background-size: cover;
+  background-position: center;
+  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.534);
+  backdrop-filter: sha;
   background-image: url(evie-s-dcniOOqByj0-unsplash.jpg);
 }
-#img2{
-  background-image: url(https://reverseddigital.com/assets/7b2cb684-9775-01b4-a586-c1688bca4a29/c042734b-9824-4c88-b91f-690d5808bfab/vie%20-%20Case%20large.jpg?fm=webp&fit=max&w=1536);
-}
-.bottom{
+
+.bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 40px 0;
 }
-.bottom i{
+
+.bottom i {
   border-radius: 50px;
   border: 2px solid black;
   padding: 15px 30px;
   font-size: 22px;
   font-weight: 800;
 }
-.bottom i:hover{
+
+.bottom i:hover {
   color: white;
   background-color: black;
 }
-.bottom h2{
+
+.bottom h2 {
   font-size: 35px;
   font-weight: 500;
   margin-bottom: 8px;
 }
-.bottom h4{
+
+.bottom h4 {
   opacity: .7;
   font-size: 17px;
+}
+
+@media (max-width:600px) {
+  #nav {
+    width: 100%;
+    height: 10vw;
+    white-space: nowrap;
+    padding: 3vw 6vw;
+  }
+
+  #nav-part1 {
+    font-size: 1.4vw;
+  }
+
+  #nav-part2 {
+    font-size: 2vw;
+  }
+
+  #content {
+    width: 100%;
+    height: 50vw;
+    padding: 3vw 6vw;
+  }
+
+  #content h3 {
+    font-size: 2.5vw;
+  }
+
+  #content h1 {
+    font-family: aeonik;
+    font-size: 10vw;
+    letter-spacing: -.3vw;
+    line-height: 10vw;
+  }
+
+  #case {
+    width: 100%;
+    padding: 8vw 6vw;
+  }
+
+  #case h4,
+  #right h5 {
+    font-size: 2.2vw;
+    font-weight: 500;
+  }
+
+  #line {
+    height: 1px;
+    background-color: black;
+    width: 100px;
+  }
+
+  #projects {
+    width: 100%;
+    padding: 3vw 2vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    gap: 3vw;
+  }
+
+  .elem {
+    width: 100%;
+  }
+
+  .elem .elem-img {
+    width: 45vw;
+    height: 40vh;
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw;
+  }
+
+  .bottom i {
+    border-radius: 40px;
+    border: 1px solid black;
+    padding: 1.88vw 3vw;
+    font-size: 2.2vw;
+    font-weight: 800;
+  }
+
+  .bottom h2 {
+    font-size: 3vw;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .bottom h4 {
+    opacity: 1.3vw;
+    font-size: 1.55vw;
+  }
 }
